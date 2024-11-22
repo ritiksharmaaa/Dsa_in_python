@@ -1,0 +1,156 @@
+Linked List : - 
+
+outline 
+Discussion about single and double link list.
+  What is linked list.
+  where are linked list used? 
+  Terminology.
+  Single linked vs Doubly Linked 
+  
+Implementation detail.
+
+ How to insert new elements.
+ How to remove elements.
+ 
+Complexity analysis.
+Code implementation doubly linked list.
+
+------------------------------------
+
+A linked list is a sequential list of node that whole data which pointed to other node also containing data.
+
+data > data > data > data >null
+
+
+where used : - 
+
+- Used in many lists Q Stack implementations.
+- Grade 4 creating circular list.
+- Can easily model real world objects such as train.
+- Used in separate chaining which is present certain hash table implementation to deal with hashing collisions
+- Often used in the implementation of adjacent list for graph 
+
+
+Terminology
+
+
+head : the first node ina linked linked list 
+Tail : the last node in a linked list 
+pointer : reference to another node (mean var name which hold the node )
+Node : A object containing data and pointers.
+
+intial data : head  > data >---- : pointer  data > null : tail 
+
+ : here arrow is define a pointer ()it a val in programming .
+
+Singly vs Doubly linked list
+
+Singly : Singly linked list only holder reference to the next node in the implementation you always maintain a reference to the head to the linked list and a reference to the tail node for quick edition and removals
+
+doubly : Without the delete linked list each node hold a reference to the next and the previous note in the implementation you always maintain a reference to the head and the deal of the Double link list to do quick addition remain from the both end of lists.
+
+              pros                   cons 
+
+
+singly   use less memory          cannot easily 
+         simpler implementation   access previous 
+                                   element 
+
+doubly   can be traverse          take 2 x memory 
+           backward 
+
+
+
+why because pointer also 8bytes in  64bit and 4 bytes if 32 bit computer 
+
+
+----------------------
+
+inserting Singly linked list 
+
+: - insert 11 where the third node is 
+
+head                           tail 
+ 5 ---->  23 ---->   7 ---->     13
+
+
+we have iser it to where 7 have so what we do we traverse to 23 and replace 23 next pointer to our new node 11 and there next node to 7 pointer 
+
+
+
+in double linked list 
+
+first we reach to 23 next to new node 11 also having refrence to 23 pointer and 11 next node set to 7 previous node 
+
+
+: - remove from singly linked list 
+
+
+remove 9 from following 
+
+
+7 ---> 0 -----> 4 ------> 9 ------> 15 
+
+
+first we  travers 7 than 0 than 4 and than 9 we find it so what we do we store it to a temp var than we find next node 15 and previous node 4 
+
+do what we read 15 pointer from temp and reffrece the node to to 4 next node 
+
+after doing this we delete temp so avoide memory leak 
+
+
+
+removing from doubly linked list 
+
+remove 9 from the following Dll
+head                            tail 
+7  ----> 0 -----> 4 ----- 9 ---- 15 
+
+idea is same but here we dont need to use temp to that node 
+
+we just take refrece of next target node in case 9 so next is 15 
+
+and just change ther previous node 9 to to four an d four next node to 15 node .
+than we have to remove those node othe wise it left in memory  
+
+
+
+Complexity : - 
+
+                 singly           Doubly 
+
+search          o(n)                 o(n)
+
+insert at head   o(1)                 o(1)
+
+insert at tail    o(1)                 o(1)
+
+remove at head    o(1)                 o(1)
+
+remove at tail    o(n)                  o(1)
+
+remove in middle   o(n)                  o(n)
+
+
+
+implementation 
+
+source code 
+
+GitHub.com/williamfiset/data-structures 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

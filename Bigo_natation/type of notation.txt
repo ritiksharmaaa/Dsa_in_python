@@ -1,0 +1,14 @@
+Big O notation
+
+ n -  the size of the input complexity order in firm smallest to largest
+
+constant time : O(1)
+logarithmic time : o(log(n))
+linear time : o(n)
+linearithmic time : o(nlog(n))
+quardric time : (o(n^2))
+cubic time : o(n^3)
+Exponential Time : O(b^n) b > 1 
+Factorial Time : o(n!)
+
+

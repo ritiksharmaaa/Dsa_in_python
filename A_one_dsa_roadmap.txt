@@ -1,0 +1,58 @@
+data type : int float boolean string char long double  bigint .
+
+condition operator : - if else . switch statement , ternanry operator 
+
+loop : - for , while , do while 
+
+basic data  structure : array stack sets hash map 
+
+design pricipal : - dry kiss solid 
+
+oops : - classes object static and non static getter setter  abstraction polymorphism  inheritance encapsulation 
+
+design pattern : singleton , builder bridge , command ,factory  , adapter  proxy observer , iterator 
+
+tirm an space complexity : - constant linear logorithmic , quardratic cubic 
+
+number system : binary decimal octal hexadecimal 
+
+binary operarion : left shift right shift count bits 
+
+array : - static array . dynamic sized array , add , remove , update , reviersin gsearching in array , union of array , rotating array , merging array 
+
+linklist : -  single linklist , double linklist , circular linked list , reverse list , cycling  detection , pair swapping , dublicate removal 
+
+
+stack : - two stack , using o(1) space and o(N) space , reverse string and reverse stack , redundant bracket 
+
+queues : - queue with stack , priority queue , circular queue , double ended queue 
+
+hashmap : - hash fuction , hash table , linear and quadratic probing , double hashing 
+
+trees : - pre order , post order , in -order , morris , breadth first , depth first 
+
+
+
+AVL trees : - zig zag , boundary , vertical order , left , right , left-right , right-left 
+
+tries : - strong auto complete , longest common prefix 
+
+heaps : - min max heap , heapify 
+
+graphs : - breadth first , depth first search , adjacent matrix , adjacent list , weighted graphs , dijkstra algo , spanning treee , prim algo , topology sorting , khan algo 
+
+recursion : - memory stack , fibnoacchi series , climbing staire ,  say digiit , reverse string , check palindrome , subset /sequece ,
+phone keypad problem , permutation of string , 
+rat in maze . 
+
+string manuplation : - reverse rotate remove insert string 
+
+searching : linear , binary , jump , exponential 
+
+sorting : - bubble , insertion , quick , selection , merge , counting , bucket 
+ 
+
+
+
+ 
+

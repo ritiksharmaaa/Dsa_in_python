@@ -1,0 +1,138 @@
+tips : - 
+
+dsa topic for interview 
+
+important dsa topic 
+resorces found usefull 
+how to master dsa topic from scratch 
+revision stategy 
+
+
+
+must know dsa topic for interview : - 
+
+Data structure 
+
+Algorithim 
+
+problem solving techniques: = 
+
+
+
+------------------------
+
+
+data structure : -
+
+ 1 linear : - 
+ 
+
+  Array 
+  Linllist 
+  Stacks 
+  Queues
+  HashTab;e 
+   
+ 2 non-linear : - 
+
+ Trees 
+ Binary Search Trees 
+ Heaps 
+ Graphs 
+ Tries
+Union-Find 
+
+
+
+Algorthims : - 
+
+ Sorting 
+ BinarySaerch 
+Bit manputation 
+In -order 
+Pre -Order 
+Post -Order 
+Level-Order 
+
+Graph Algo : - 
+
+DFS/BFS 
+TopologicalSort
+Dijkstra
+Bellman Ford  
+
+
+
+
+
+Problem Solving pattern and  techniques : -
+
+Two pointer 
+Sliding window 
+Prefix sum
+Fast And slow Pointer 
+Divide & Conquer 
+greedy Alogo 
+REcursion 
+Backtracking
+Dynamic programing  
+TOp K Element 
+
+
+segmanet treaa sk rarealy  just know about 
+
+
+time and space complexity 
+
+
+
+1 : starts with basic  : - 
+
+what it is 
+how to repreent in code 
+different operation you can perform on it 
+time/ s[ace complexity 
+
+
+
+ex : - binar tree 
+
+
+what is binry tree 
+
+how it implement in code 
+common operation like : - inserting a node deleteing node  searching a node 
+
+2 : learn real-word applications 
+
+use pen and paper to learn data structure and algorithm 
+implement it from scratch 
+solve easy problem . try solving 4 to 5 eacy problem on leat code .
+
+
+
+know pattern : - 
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+

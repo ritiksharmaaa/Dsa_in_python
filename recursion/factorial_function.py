@@ -11,5 +11,5 @@ def factorial(n):
          return n * factorial(n-1)
 
 
-data = factorial(12)
+data = factorial(5)
 print(data)

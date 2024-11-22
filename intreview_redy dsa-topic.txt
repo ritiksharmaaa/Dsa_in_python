@@ -1,0 +1,150 @@
+learn javascript  or a language 
+time and space complexity 
+basic data structure  is enough for cracking interview 
+sting and array 
+linklist 
+stack queue 
+
+advance data structure 
+tree heap 
+graph 
+
+basic algorithms 
+
+sorting 
+bibble selection insertion merge quick 
+\\searching 
+
+linear  & binary searh 
+dfs bfs in graph 
+
+advance algo 
+
+dynamic 
+  overlapping sub probel 
+memoigation 
+tabulation 
+
+
+-- greedy 
+   concept example 
+
+- dont know want  to name this category 
+
+backtracking 
+shortest path 
+mini mom spanning tree 
+
+
+-----------------starting prepration 
+
+dsa pep : - language basic 
+mind set : problem solving , logic solving 
+patter , interview prep 
+
+big 0 : - 
+
+space and time complexity 
+
+scalabiloty 
+rule & grphs 
+few exercise to practice 
+
+
+
+strings : - 
+
+ Basic Nature , Immutable nature
+ Indexing , Iterating , concatenation & substring Extraction 
+ case conversion Trimming split & join / with Array 
+replace charter , substring , reversing , palindromes 
+anagram , longest substring 
+letcode easy . 
+
+
+Array : - 
+
+understanding Array 
+dyanmci and static 
+memory allocation(access & storage ) 
+operation :
+  accesing and updating element 
+  insertion , deletion (end , start , end )
+  forward traversal , backward traversal 
+
+Multi dimensional 
+this array we called matrics travers right to left or to right 
+reverse , rotation , shuffle , randomigation 
+
+patterns ;  feelit harder 
+  two pointers , sliding window , subarray 
+
+Searching & sorting : - 
+bubble selection , insertion merge quick 
+linear search binary search 
+leet code : -- eays and medium 
+
+
+LINKED-LIST : - 
+
+ : -  nodes & pointer , comparision with array 
+ : -  single , double & pointer circular
+  
+: - implantation 
+      node with date & pointer
+      constructor 
+      Head /Tail refrence 
+      utitlity function (isempty , size )
+      insertion Deletion Searching 
+: - advance technique 
+
+    two pointer 
+    reverse 
+    merge & split 
+:- pattern 
+direct cycle 
+finding mid 
+N * node from easy &medium
+leet code  easy medium 
+
+
+Stack Queue :-
+
+stack lifo 
+stack fifo 
+
+: - basic operation 
+push , pop , peek 
+
+:- basic operation 
+
+  circular 
+  add remove front 
+underflow & overflow 
+:- BFS ,Round Robin 
+:- balacing Symbol , reverse & Queue 
+:- thread-state Implementation  not for beigner 
+leetcode just few .
+
+
+
+
+
+  
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

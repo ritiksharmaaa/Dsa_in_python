@@ -1,0 +1,74 @@
+static array & dynamic array 
+
+Outline
+
+Discussion an example about array
+
+what is an Array ? 
+when adn where is  Array used ? 
+Complexity
+static array usage example 
+dynamic array implementation details 
+code implementation 
+
+
+static Array : fixed length / contigious place in memory 
+
+use where : - 
+
+
+anywhere storing and accessing a sequintely array , temporary storing objects , used by io routine by buffer  , lookup table and inverse lookup table 
+can be used to return multiple value from a function 
+used in dynamic programing to cache answer to sub problem . 
+
+
+complexity of the both array static and dynamic array : - 
+
+            static                  dynamic 
+
+Accesss      o(1)                       o(1)
+search       o(n)                       o(n)
+inseartion   N/A                        o(n)
+Appending     N/A                       o(1)
+deletion       N/A                      o(n)  
+
+
+
+dynamic array  can grow and shrink in size : - 
+
+in static A[0] =  1 mean index zero assign to 0 index 
+
+but in dynamic we dont know the index so we use a funxtion on that 
+
+A.add(1)  : here a is d array add is function which find index and place value to there . 
+
+here how d array shrink and grow based on operation 
+
+
+A  = [34 , 4 ]
+
+A.add(-1) = array size grow 2 to three  [34 , 4 , -1] 
+A.add(34) = [34 , 4 -1, 34 ]
+A.remove(4) = [34, -7 , 34 ]
+
+how we create a d arry from s array : -
+
+
+ we lean geometry progration in python dsa saem concept came here : 
+
+
+1 create esthetic array with an initial capacity 
+2 Add element to the underlying static array keeping track of number of elements. 
+3  if adding number element will be exist the capacity then create a new strategy which that twice the capacity and copy the original element into it.
+
+in python  you have already a d array : but in othere you have to made it with there all there operation function like insert at remove itrator for those array you have to clear your concept about iterator first . 
+
+
+  
+
+
+
+ 
+
+
+
