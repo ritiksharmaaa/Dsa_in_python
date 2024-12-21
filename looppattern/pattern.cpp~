@@ -1,0 +1,29 @@
+#include <iostream>
+
+void square_pattern(int n){
+	
+       for(int i = 0 ; i < n ; i++){
+           for(int j = 0 ; j < n ; j ++){
+	    	   std:: cout << "* ";
+	   }
+	   std::cout << std::endl ;
+       }	
+
+
+}
+
+
+
+
+int main(){
+	// patter mean nested loop 
+	// outerloop decide no of line 
+	//inner loop alway focus on coloum and connect tem som eone to row
+	//print them them inside the inner for loop 
+	//observer symetry of optional choice 
+       int n;
+      std::cin >> n ;   
+	 
+	       square_pattern(n) 
+   return 0 ;
+}
