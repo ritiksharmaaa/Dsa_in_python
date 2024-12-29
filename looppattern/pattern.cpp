@@ -1,153 +1,245 @@
 #include <iostream>
 
-void square_pattern(int n){
-	
-       for(int i = 0 ; i < n ; i++){
-           for(int j = 0 ; j < n ; j ++){
-	    	   std:: cout << "* ";
-			for(int j = 0; j < i*2 + 1; j++){
+void square_pattern(int n)
+{
+
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			std::cout << "* ";
+			for (int j = 0; j < i * 2 + 1; j++)
+			{
 				std::cout << "*";
 			}
 			std::cout << std::endl;
 		}
 	}
-	   std::cout << std::endl ;
-	   }	
+	std::cout << std::endl;
+}
 
-
-
-void right_angle_pattern(int n){
-   for (int i = 0 ; i < n ; i++ ){
-	for (int j= 1 ; j <= i+1 ; j ++){
-		std :: cout << "* ";
-	}
-	std::cout << std::endl ;
-   }
-};
-
-void numer_right_angle_pattern(int n){
-	for (int i = 0 ; i < n ; i ++){
-		for (int j = 1 ; j <= i+1 ; j++ ){
-			std::cout << j << " ";
-
+void right_angle_pattern(int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 1; j <= i + 1; j++)
+		{
+			std ::cout << "* ";
 		}
-		std::cout << std::endl ;
-
+		std::cout << std::endl;
 	}
 };
 
-// 1 22 333 4444 55555 this patter 
-void i_in_jloop(int n){
-	for (int i = 1 ; i <= n ; i++){
-		for (int j = 0 ;  j < i ; j++){
+void numer_right_angle_pattern(int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 1; j <= i + 1; j++)
+		{
+			std::cout << j << " ";
+		}
+		std::cout << std::endl;
+	}
+};
+
+// 1 22 333 4444 55555 this patter
+void i_in_jloop(int n)
+{
+	for (int i = 1; i <= n; i++)
+	{
+		for (int j = 0; j < i; j++)
+		{
 			std::cout << i << " ";
 		}
-		std::cout << std::endl ;
-
-
+		std::cout << std::endl;
 	}
 };
 
+// reversing each upper loop except square loop
 
-// reversing each upper loop except square loop 
+// rightangle reverse loop
 
-
-// rightangle reverse loop 
-
-
-void right_ange_reverse_loop(int n ){
-	for(int i = n ; i > 0; i -- ){
-		for(int j = 0 ; j < i ; j++){
-			std::cout<< "* ";
+void right_ange_reverse_loop(int n)
+{
+	for (int i = n; i > 0; i--)
+	{
+		for (int j = 0; j < i; j++)
+		{
+			std::cout << "* ";
 		}
-		std::cout << std::endl; 
-
+		std::cout << std::endl;
 	}
 }
 
-// right angle with 1 12 123 1234 12345 
+// right angle with 1 12 123 1234 12345
 
-void right_angle_reverse_number(int n ){
-   for (int i = 5 ; i > 0 ; i -- ){
-	for(int j = 1; j < i+1  ; j ++){
-		std::cout << j << " ";
-	};
-	std::cout << std::endl;
-}}
+void right_angle_reverse_number(int n)
+{
+	for (int i = 5; i > 0; i--)
+	{
+		for (int j = 1; j < i + 1; j++)
+		{
+			std::cout << j << " ";
+		};
+		std::cout << std::endl;
+	}
+}
 
-// right anngle reverse with this  55555 4444 333 22 1 like that 
+// right anngle reverse with this  55555 4444 333 22 1 like that
 
-void reverse_i_to_jloop(int n){
-	for(int i = n ; i > 0 ; i --){
-		for (int j = 0 ; j < i ; j++){
+void reverse_i_to_jloop(int n)
+{
+	for (int i = n; i > 0; i--)
+	{
+		for (int j = 0; j < i; j++)
+		{
 			std::cout << i << " ";
 		}
 		std::cout << std::endl;
 	}
 }
 
-
 // pattern start pyramid pattern
 
-        // *
-	   // * * *
-	 // * * * * *
-	// * * * * * * *   
+// *
+// * * *
+// * * * * *
+// * * * * * * *
 
+// first see how many row it print so it a 5 tha see how many colum it print 9 and than see what the print so it print 3 space than * in next line 2 space than 3 * than in 3 line 1 space but print 5* like that
+// so this type of question you have to identofied how mnay space and how mnay main item you have to print that you have to find
 
-// first see how many row it print so it a 5 tha see how many colum it print 9 and than see what the print so it print 3 space than * in next line 2 space than 3 * than in 3 line 1 space but print 5* like that 
-// so this type of question you have to identofied how mnay space and how mnay main item you have to print that you have to find 
-
-//  4 space     *      than 4 space 
+//  4 space     *      than 4 space
 // 3 space    * * *    than 3 space
 // 2 space   * * * * *   than 2 space
 // 1 space  * * * * * * *  than 1 space
 // 0 space * * * * * * * * * than 0 space
 
-// n = 5  and you see left space is n - i = 0 - 1 
-// here 5 - 0 -1 = 4 and 5 -1 -1 = 3 and 5 - 2 -1 = 2 and 5 - 3 -1 = 1 and 5 - 4 -1 = 0 so fprmula depend on i n - i -1 
+// n = 5  and you see left space is n - i = 0 - 1
+// here 5 - 0 -1 = 4 and 5 -1 -1 = 3 and 5 - 2 -1 = 2 and 5 - 3 -1 = 1 and 5 - 4 -1 = 0 so fprmula depend on i n - i -1
 
-// s o formula from printing * becuas eit increae in odd order so i need to print * in odd order from taking the uppper loop i 
+// s o formula from printing * becuas eit increae in odd order so i need to print * in odd order from taking the uppper loop i
 
-// so if we see  so formule is like if =0 if j < i*2 +1 
+// so if we see  so formule is like if =0 if j < i*2 +1
 
-//  j < i*2 + 1  
+//  j < i*2 + 1
 // ler see example id i = 0 so 0 *2 +1 = 1 and if i = 1 than i*2 + 1 = 3__ and if i = 2 than i*2 + 1 = 5__ and if i = 3 than i*2 + 1 = 7__ and if i = 4 than i*2 + 1 = 9__ so this is the formula for printing *
 
-// so we get   the pattern 
+// so we get   the pattern
 
-
-
-
-
-void pyramidPattern(int n ){
-	for (int i = 0 ; i < n ; i++){
-		for(int s = 0 ; s < n-i-1  ; s++){
+void pyramidPattern(int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		for (int s = 0; s < n - i - 1; s++)
+		{
 			std::cout << " ";
 		}
-		for (int j = 0 ; j < i*2 +1 ; j++){
+		for (int j = 0; j < i * 2 + 1; j++)
+		{
 			std::cout << "*";
 		}
-		std :: cout << std::endl;
-	
-	
+		std ::cout << std::endl;
+	}
+}
+// note here this i smy way wehn i do it with reverse i mkae middle element in reverse easily but fil to create space in 1 2 3 4 order it easy
+// if i = 0 i < n and second loop depen on i than we create spaces we have to build middle pint star statmenet
+
+// 0 - 0 , 9 , 0
+// 1 - 1 , 7 , 1
+// 2 - 2 , 5 , 2
+// 3 - 3 , 3 , 3
+
+// here i am doing with reverse i am able to make middle loop but fail to build space in 1 2 3 4 order for if it is normal way so we can build space for miidle loop we have to use formula 2n - 2-i +1
+
+// let n = 5
+// 2*5 - 2 * 0 + 1 = 9
+// 2*5 - 2 * 1 + 1 = 7
+// 2*5 - 2 * 2 + 1 = 5
+// 2*5 - 2 * 3 + 1 = 3
+// 2*5 - 2 * 4 + 1 = 1
+
+void stiver_reverse_pyramid(int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < i; j++)
+		{
+			std ::cout << " ";
+		}
+		// let build middle loop from formaulr 2 n - 2*i + 1
+		for (int k = 0; k < 2 * n - 2 * i - 1; k++)
+		{
+			std::cout << "*";
+		}
+			std::cout << std::endl;
+	}
+}
+
+void reverse_pyramidPAttern(int n)
+{
+	for (int i = n; i > 0; i--)
+	{
+		for (int j = 0 ; j < n - i; j++)
+		{
+			std::cout << " ";
+		}
+
+		for (int k = 0; k < i * 2 - 1; k++)
+		{
+			std::cout << "*";
+		}
+		std::cout<< std::endl ;
+	}
+};
 
 
-}}
+// my cobination of pyramid and reverse of pyramid pattern
+
+void combination_pyramid_pattern(int n){
+	int bp = n /2 ;
+	int cpb= 0 ;
+		// reverse_pyramidPAttern(bp);
+	while (cpb < n){
+		if (cpb == bp) {
+			reverse_pyramidPAttern(bp);
+			break;
+		} else {
+			pyramidPattern(bp);
+			cpb = bp;
+		}
+		
+	}
+};
+
+void cobination_of_right_angle_patten_with_star(int n){
+	int i = n /2 ;
+	int j = 0 ;
+
+	while (j < n){
+		if (j == i){
+			right_ange_reverse_loop(i -1);
+			break;
+		} else {
+			right_angle_pattern(i);
+			j = i;
+		}
+	}
+}
 
 
 
-
-int main(){
-	// patter mean nested loop 
+int main()
+{
+	// patter mean nested loop
 	// outerloop decide no of line 5
-	//inner loop alway focus on coloum and connect tem som eone to row
-	//print them them inside the inner for loop 
-	//observer symetry of optional choice 
-       int n;
-      std::cin >> n ;   
-	    
-	square_pattern(n) ;
+	// inner loop alway focus on coloum and connect tem som eone to row
+	// print them them inside the inner for loop
+	// observer symetry of optional choice
+	int n;
+	std::cin >> n;
+
+	square_pattern(n);
 	std::cout << "---------------------------------------------------------" << std::endl;
 	right_angle_pattern(n);
 	std::cout << "---------------------------------------------------------" << std::endl;
@@ -164,7 +256,18 @@ int main(){
 	// ----------------------------
 
 	pyramidPattern(5);
+	// print stiver revesre pyramid
+	std::cout << "-------------------------------------------------------" << std::endl;
 
+	stiver_reverse_pyramid(5);
+	std::cout << "my revesre pyramid pattern \n" << std::endl;
+	reverse_pyramidPAttern(5);
 
-   return 0 ;
+	std::cout << "-------------------------------------------------------" << std::endl;
+    std::cout << "my reverse way to print pattern "	<< std::endl ; combination_pyramid_pattern(20);	
+
+	std::cout << "-------------------------------------------------------" << std::endl;
+	std::cout << "my combination of right angle pattern with star" << std::endl;
+	cobination_of_right_angle_patten_with_star(20);
+	return 0;
 }
