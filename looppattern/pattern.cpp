@@ -172,7 +172,7 @@ void stiver_reverse_pyramid(int n)
 		{
 			std::cout << "*";
 		}
-			std::cout << std::endl;
+		std::cout << std::endl;
 	}
 }
 
@@ -180,7 +180,7 @@ void reverse_pyramidPAttern(int n)
 {
 	for (int i = n; i > 0; i--)
 	{
-		for (int j = 0 ; j < n - i; j++)
+		for (int j = 0; j < n - i; j++)
 		{
 			std::cout << " ";
 		}
@@ -189,46 +189,128 @@ void reverse_pyramidPAttern(int n)
 		{
 			std::cout << "*";
 		}
-		std::cout<< std::endl ;
+		std::cout << std::endl;
 	}
 };
-
 
 // my cobination of pyramid and reverse of pyramid pattern
 
-void combination_pyramid_pattern(int n){
-	int bp = n /2 ;
-	int cpb= 0 ;
-		// reverse_pyramidPAttern(bp);
-	while (cpb < n){
-		if (cpb == bp) {
+void combination_pyramid_pattern(int n)
+{
+	int bp = n / 2;
+	int cpb = 0;
+	// reverse_pyramidPAttern(bp);
+	while (cpb < n)
+	{
+		if (cpb == bp)
+		{
 			reverse_pyramidPAttern(bp);
 			break;
-		} else {
+		}
+		else
+		{
 			pyramidPattern(bp);
 			cpb = bp;
 		}
-		
 	}
 };
 
-void cobination_of_right_angle_patten_with_star(int n){
-	int i = n /2 ;
-	int j = 0 ;
+// striver cobination pyramid
 
-	while (j < n){
-		if (j == i){
-			right_ange_reverse_loop(i -1);
+void stiver_revese_right_pyramid(int n, int loop)
+{
+	int l = loop;
+
+	for (int i = 0; i < l; i++)
+	{
+		pyramidPattern(i);
+		reverse_pyramidPAttern(i);
+		// that it why creating a if else base like my
+	}
+}
+
+// here we are splitong n but n is normal 5 it mean n in right and n also in revese not need to split n /2 actual we call diffrent loop continiou or callingt the loop one by one hwy if else loop just sime call right(5) everse(5) that it why revese loop
+void cobination_of_right_angle_patten_with_star(int n)
+{
+	int i = n / 2; // here n is full for revese as well right
+	int j = 0;
+
+	while (j < n)
+	{
+		if (j == i)
+		{
+			right_ange_reverse_loop(i - 1);
 			break;
-		} else {
+		}
+		else
+		{
 			right_angle_pattern(i);
 			j = i;
 		}
 	}
 }
 
+// stiver reverse right angle without usig any previous loop
 
+// first count no of row it is 9 and i = 1 2 3 4 5 and so one so we have to deside where we break  print right start to revese with
 
+void striver_right_angle_reverse(int n)
+{
+	// n =5 we have to see diffrently beause n is alway = 5 we have to decide it how mnay time outr loop have to run so in pic you we see for 5 is 9 iteration
+	for (int i = 0; i <= 2 * n - 1; i++)
+	{
+		int start = i;
+		if (i > n)
+			start = 2 * n - i; // here naswer like i =  6 n = 5 so 2*5 - 6 = 4 so 4 is the answer
+		for (int j = 1; j <= start; j++)
+		{
+			std ::cout << "* ";
+		}
+		std::cout << std::endl;
+	}
+}
+
+//  this could we very much inspired by stiver upper patern we have to condionaly rendere in running loop
+
+//  this is my way whichi sprintinsimiar way but not exactely
+
+void binary_right_angle_number(int n)
+{
+	// n = 5
+	for (int i = 0; i < n; i++)
+	{
+		bool ok = true; // false mean print 0 and 1 mean true
+		for (int j = 0; j < i; j++)
+		{
+			std::cout << (ok ? 1 : 0);
+			ok = !ok;
+		}
+		std::cout << std::endl;
+	}
+}
+
+void stiver_right_angle_number(int n)
+{
+	// here what you have to sind pattern in row so you we see if it even row it always start with one for odd it start with 0
+	// so we can say we gere a loop who decide from where i have to start
+	int start = 0;
+	// bool ok = start;
+	for (int i = 0; i < n; i++)
+	{
+		if (i % 2 == 0)
+			start = 1;
+		else
+			start = 0;
+		for (int j = 0; j <= i; j++)
+		{
+			std::cout << start ;
+			start = !start ;
+
+			// std::cout << std::endl;
+		}
+		std::cout << std::endl;
+	}
+}
 int main()
 {
 	// patter mean nested loop
@@ -260,14 +342,27 @@ int main()
 	std::cout << "-------------------------------------------------------" << std::endl;
 
 	stiver_reverse_pyramid(5);
-	std::cout << "my revesre pyramid pattern \n" << std::endl;
+	std::cout << "my revesre pyramid pattern \n"
+			  << std::endl;
 	reverse_pyramidPAttern(5);
 
 	std::cout << "-------------------------------------------------------" << std::endl;
-    std::cout << "my reverse way to print pattern "	<< std::endl ; combination_pyramid_pattern(20);	
+	std::cout << "my reverse way to print pattern " << std::endl;
+	combination_pyramid_pattern(20);
 
 	std::cout << "-------------------------------------------------------" << std::endl;
 	std::cout << "my combination of right angle pattern with star" << std::endl;
 	cobination_of_right_angle_patten_with_star(20);
+
+	std::cout << "-------------------------------------------------------" << std::endl;
+	std::cout << "stiver way to complete this right angle reverse loop \n"
+			  << std::endl;
+	striver_right_angle_reverse(5);
+
+	std::cout << "-------------------------------------------------------" << std::endl;
+	std::cout << " my way to do it binary right angle number pattern" << std::endl;
+	binary_right_angle_number(5);
+	std::cout << "stiver plus my way join" << std::endl;
+	stiver_right_angle_number(6);
 	return 0;
 }
